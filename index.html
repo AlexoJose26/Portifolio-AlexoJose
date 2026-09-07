@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Portfólio de Alexo Salvador José — Desenvolvedor de Software, estudante de Ciências da Computação e entusiasta de Inteligência Artificial.">
+
+  <meta name="keywords"
+    content="Alexo Salvador José, Desenvolvedor de Software, Inteligência Artificial, Django, Python, JavaScript, AgroIA Moxico, Computer Vision, Angola">
+
+  <meta name="author" content="Alexo Salvador José">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="theme-color" content="#0d4d31">
+
+  <meta name="color-scheme" content="dark light">
+
+  <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="Alexo Salvador José | Desenvolvedor de Software">
+
+  <meta property="og:description"
+    content="Portfólio profissional de Alexo Salvador José, desenvolvedor de software e entusiasta de Inteligência Artificial.">
+
+  <meta property="og:image" content="images/foto-Alexo.png">
+
+  <meta property="og:locale" content="pt_PT">
+
+
+  <title>
+    Alexo Salvador José | Desenvolvedor de Software
+  </title>
+
+
+  <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+  <!-- =====================================================
+         TAILWIND CSS
+    ====================================================== -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+
+    tailwind.config = {
+
+      theme: {
+
+        extend: {
+
+          fontFamily: {
+
+            sans: [
+              'Inter',
+              'sans-serif'
+            ],
+
+            display: [
+              'Space Grotesk',
+              'sans-serif'
+            ]
+
+          },
+
+          colors: {
+
+            primary: {
+
+              50: '#eefbf4',
+              100: '#d8f5e4',
+              200: '#b5eacb',
+              300: '#83d8aa',
+              400: '#4bc184',
+              500: '#22a565',
+              600: '#168451',
+              700: '#126940',
+              800: '#105436',
+              900: '#0d452e',
+              950: '#062a1c'
+
+            },
+
+            gold: {
+
+              400: '#e5c06b',
+              500: '#d9a441',
+              600: '#c28e2e'
+
+            }
+
+          }
+
+        }
+
+      }
+
+    };
+
+  </script>
+
+
+  <!-- =====================================================
+         CSS PERSONALIZADO
+    ====================================================== -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- =====================================================
+         FOOTER + NAVBAR OVERRIDES
+    ====================================================== -->
+
+  <style>
+    /* ==================================================
+           NAVBAR
+        ================================================== */
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .nav-link i {
+      font-size: .75rem;
+      opacity: .72;
+      transition: .25s ease;
+    }
+
+    .nav-link:hover i,
+    .nav-link.active i {
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+
+
+    .mobile-menu a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-menu a i {
+      width: 20px;
+      color: var(--primary-light);
+    }
+
+
+    /* ==================================================
+           FOOTER
+        ================================================== */
+
+    .footer {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 60px;
+      padding: 75px 0 50px;
+    }
+
+    .footer-column {
+      min-width: 0;
+    }
+
+
+    /* BRAND */
+
+    .footer-description {
+      max-width: 360px;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, .60);
+      line-height: 1.85;
+      font-size: .92rem;
+    }
+
+
+    /* HEADINGS */
+
+    .footer-heading {
+      margin-bottom: 22px;
+      color: rgba(255, 255, 255, .95);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+
+    /* QUICK LINKS */
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .footer-links a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: rgba(255, 255, 255, .60);
+      font-size: .9rem;
+      transition: all .25s ease;
+    }
+
+    .footer-links a i {
+      width: 18px;
+      color: var(--primary-light);
+      font-size: .75rem;
+      transition: .25s ease;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+      transform: translateX(5px);
+    }
+
+    .footer-links a:hover i {
+      transform: scale(1.1);
+    }
+
+
+    /* SOCIAL */
+
+    .footer-social-new {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .footer-social-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 45px;
+      padding: 10px 13px;
+      border: 1px solid rgba(255, 255, 255, .09);
+      border-radius: 12px;
+      color: rgba(255, 255, 255, .68);
+      background: rgba(255, 255, 255, .025);
+      transition: all .25s ease;
+    }
+
+    .footer-social-link i {
+      width: 19px;
+      text-align: center;
+      color: var(--primary-light);
+      font-size: .9rem;
+      transition: .25s ease;
+    }
+
+    .footer-social-link span {
+      font-size: .82rem;
+      white-space: nowrap;
+    }
+
+    .footer-social-link:hover {
+      color: #fff;
+      border-color: rgba(75, 193, 132, .35);
+      background: rgba(75, 193, 132, .08);
+      transform: translateY(-3px);
+    }
+
+    .footer-social-link:hover i {
+      transform: scale(1.12);
+    }
+
+
+    /* DIVIDER */
+
+    .footer-divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(255, 255, 255, .08);
+    }
+
+
+    /* FOOTER BOTTOM */
+
+    .footer-bottom-new {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 25px 0;
+      color: rgba(255, 255, 255, .45);
+      font-size: .77rem;
+    }
+
+    .footer-bottom-new span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .footer-tech {
+      color: rgba(255, 255, 255, .52);
+    }
+
+    .footer-tech strong {
+      color: var(--primary-light);
+      font-weight: 600;
+    }
+
+
+    /* FOOTER LOCATION */
+
+    .footer-location {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      color: rgba(255, 255, 255, .48);
+      font-size: .82rem;
+    }
+
+    .footer-location i {
+      color: var(--gold);
+    }
+
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+
+      .footer-main {
+        grid-template-columns: 1.3fr 1fr;
+        gap: 45px;
+      }
+
+      .footer-social-column {
+        grid-column: 1 / -1;
+      }
+
+      .footer-social-new {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+    }
+
+
+    @media (max-width: 700px) {
+
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 55px 0 40px;
+      }
+
+      .footer-social-column {
+        grid-column: auto;
+      }
+
+      .footer-social-new {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom-new {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+    }
+
+
+    @media (max-width: 430px) {
+
+      .footer-social-new {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-social-link {
+        width: 100%;
+      }
+
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+         PRELOADER
+    ====================================================== -->
+
+  <div id="preloader">
+
+    <div class="loader-wrapper">
+
+      <div class="loader-logo">
+        <span>A</span>
+      </div>
+
+      <div class="loader-line">
+        <span></span>
+      </div>
+
+      <p>
+        Inicializando portfólio...
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+  <div class="site-background" aria-hidden="true">
+
+    <div class="background-grid"></div>
+
+    <div class="background-orb orb-one"></div>
+
+    <div class="background-orb orb-two"></div>
+
+    <div class="background-orb orb-three"></div>
+
+  </div>
+
+
+  <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50">
+
+    <nav class="nav-container" aria-label="Navegação principal">
+
+
+      <!-- LOGO -->
+
+      <a href="#inicio" class="logo" aria-label="Alexo Salvador José - Página inicial">
+
+        <span class="logo-mark">
+          A
+        </span>
+
+        <span class="logo-text">
+          Alexo<span>.</span>
+        </span>
+
+      </a>
+
+
+      <!-- DESKTOP MENU -->
+
+      <div class="desktop-menu">
+
+
+        <a href="#inicio" class="nav-link active">
+
+          <i class="fa-solid fa-house" aria-hidden="true"></i>
+
+          <span>
+            Início
+          </span>
+
+        </a>
+
+
+        <a href="#sobre" class="nav-link">
+
+          <i class="fa-solid fa-user" aria-hidden="true"></i>
+
+          <span>
+            Sobre
+          </span>
+
+        </a>
+
+
+        <a href="#competencias" class="nav-link">
+
+          <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+
+          <span>
+            Competências
+          </span>
+
+        </a>
+
+
+        <a href="#projetos" class="nav-link">
+
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+
+          <span>
+            Projetos
+          </span>
+
+        </a>
+
+
+        <a href="#formacao" class="nav-link">
+
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+
+          <span>
+            Formação
+          </span>
+
+        </a>
+
+
+        <a href="#tecnologias" class="nav-link">
+
+          <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+
+          <span>
+            Tecnologias
+          </span>
+
+        </a>
+
+      </div>
+
+
+      <!-- NAV ACTION -->
+
+      <a href="#contacto" class="nav-button">
+
+        <span>
+          Vamos conversar
+        </span>
+
+        <i class="fa-solid fa-arrow-right" aria-hidden="true">
+        </i>
+
+      </a>
+
+
+      <!-- MOBILE BUTTON -->
+
+      <button id="mobile-menu-button" class="mobile-menu-button" type="button" aria-label="Abrir menu"
+        aria-expanded="false" aria-controls="mobile-menu">
+
+        <i class="fa-solid fa-bars" aria-hidden="true">
+        </i>
+
+      </button>
+
+    </nav>
+
+
+    <!-- MOBILE MENU -->
+
+    <div id="mobile-menu" class="mobile-menu">
+
+
+      <a href="#inicio">
+
+        <span>01</span>
+
+        <i class="fa-solid fa-house" aria-hidden="true"></i>
+
+        Início
+
+      </a>
+
+
+      <a href="#sobre">
+
+        <span>02</span>
+
+        <i class="fa-solid fa-user" aria-hidden="true"></i>
+
+        Sobre
+
+      </a>
+
+
+      <a href="#competencias">
+
+        <span>03</span>
+
+        <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+
+        Competências
+
+      </a>
+
+
+      <a href="#projetos">
+
+        <span>04</span>
+
+        <i class="fa-solid fa-code" aria-hidden="true"></i>
+
+        Projetos
+
+      </a>
+
+
+      <a href="#formacao">
+
+        <span>05</span>
+
+        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+
+        Formação
+
+      </a>
+
+
+      <a href="#tecnologias">
+
+        <span>06</span>
+
+        <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+
+        Tecnologias
+
+      </a>
+
+
+      <a href="#contacto">
+
+        <span>07</span>
+
+        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+
+        Contacto
+
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+  <main>
+
+
+    <!-- =================================================
+             HERO
+        ================================================== -->
+
+    <section id="inicio" class="hero-section">
+
+      <div class="hero-container">
+
+
+        <div class="hero-content reveal">
+
+
+          <div class="hero-badge">
+
+            <span class="status-dot"></span>
+
+            <span>
+              Disponível para novos projetos
+            </span>
+
+          </div>
+
+
+          <p class="hero-overline">
+            OLÁ, EU SOU
+          </p>
+
+
+          <h1 class="hero-title">
+
+            Alexo Salvador
+
+            <span>
+              José
+            </span>
+
+          </h1>
+
+
+          <h2 class="hero-role">
+
+            Desenvolvedor de Software
+
+            <span>
+              &
+            </span>
+
+            Entusiasta de Inteligência Artificial
+
+          </h2>
+
+
+          <p class="hero-description">
+
+            Estudante de Ciências da Computação e
+            desenvolvedor interessado em criar
+            soluções digitais modernas, aplicações
+            web e sistemas inteligentes capazes de
+            transformar problemas reais em soluções
+            tecnológicas.
+
+          </p>
+
+
+          <div class="hero-actions">
+
+
+            <a href="#projetos" class="btn btn-primary">
+
+              <span>
+                Explorar projetos
+              </span>
+
+              <i class="fa-solid fa-arrow-down" aria-hidden="true">
+              </i>
+
+            </a>
+
+
+            <a href="#sobre" class="btn btn-outline">
+
+              <span>
+                Conhecer meu perfil
+              </span>
+
+              <i class="fa-solid fa-user" aria-hidden="true">
+              </i>
+
+            </a>
+
+          </div>
+
+
+          <div class="hero-social">
+
+            <span>
+              Encontre-me em
+            </span>
+
+            <div class="social-links">
+
+
+              <a href="#" aria-label="GitHub" title="GitHub">
+
+                <i class="fa-brands fa-github" aria-hidden="true">
+                </i>
+
+              </a>
+
+
+              <a href="#" aria-label="LinkedIn" title="LinkedIn">
+
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true">
+                </i>
+
+              </a>
+
+
+              <a href="mailto:alexosalvadorjose2612@gmail.com" aria-label="Enviar email" title="Email">
+
+                <i class="fa-regular fa-envelope" aria-hidden="true">
+                </i>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual reveal" data-mouse-glow>
+
+          <div class="hero-photo-wrapper">
+
+
+            <div class="photo-decoration decoration-one">
+            </div>
+
+
+            <div class="photo-decoration decoration-two">
+            </div>
+
+
+            <div class="hero-photo-card" data-tilt>
+
+              <div class="photo-glow"></div>
+
+              <img src="images/foto-Alexo.png" alt="Fotografia de Alexo Salvador José" class="hero-photo"
+                loading="eager">
+
+            </div>
+
+
+            <div class="floating-card floating-card-top">
+
+              <div class="floating-icon">
+
+                <i class="fa-solid fa-code" aria-hidden="true">
+                </i>
+
+              </div>
+
+              <div>
+
+                <strong>
+                  Desenvolvimento
+                </strong>
+
+                <span>
+                  Software & Web
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="floating-card floating-card-bottom">
+
+              <div class="floating-icon gold-icon">
+
+                <i class="fa-solid fa-brain" aria-hidden="true">
+                </i>
+
+              </div>
+
+              <div>
+
+                <strong>
+                  Inteligência Artificial
+                </strong>
+
+                <span>
+                  Computer Vision
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="hero-code-decoration">
+
+              <span>&lt;</span>
+
+              <span>
+                code
+              </span>
+
+              <span>/&gt;</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <a href="#sobre" class="scroll-indicator" aria-label="Explorar portfólio">
+
+        <span>
+          Scroll para explorar
+        </span>
+
+        <i class="fa-solid fa-chevron-down" aria-hidden="true">
+        </i>
+
+      </a>
+
+    </section>
+
+
+    <!-- =================================================
+             SOBRE
+        ================================================== -->
+
+    <section id="sobre" class="section">
+
+      <div class="section-container">
+
+
+        <div class="section-header reveal">
+
+          <span class="section-number">
+            01
+          </span>
+
+          <div>
+
+            <p class="section-label">
+              SOBRE MIM
+            </p>
+
+            <h2 class="section-title">
+              Tecnologia com propósito.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+          <div class="about-text reveal">
+
+            <p class="about-lead">
+
+              Sou estudante de Ciências da
+              Computação e desenvolvedor
+              interessado em transformar
+              ideias e problemas reais em
+              soluções tecnológicas.
+
+            </p>
+
+
+            <p>
+
+              Minha área de interesse envolve
+              principalmente desenvolvimento
+              web, programação, bases de dados,
+              sistemas de informação e
+              Inteligência Artificial.
+
+            </p>
+
+
+            <p>
+
+              Procuro combinar tecnologia,
+              criatividade e aprendizagem
+              contínua para desenvolver
+              aplicações que sejam úteis,
+              funcionais e preparadas para
+              responder às necessidades dos
+              seus utilizadores.
+
+            </p>
+
+
+            <p>
+
+              Um dos projetos que representa
+              melhor essa visão é o
+              <strong>AgroIA Moxico</strong>,
+              uma plataforma que explora o uso
+              de Inteligência Artificial e
+              Visão Computacional aplicada
+              à agricultura.
+
+            </p>
+
+
+            <a href="#projetos" class="text-link">
+
+              Conhecer meus projetos
+
+              <i class="fa-solid fa-arrow-right" aria-hidden="true">
+              </i>
+
+            </a>
+
+          </div>
+
+
+          <div class="about-stats reveal">
+
+
+            <div class="stat-card" data-tilt>
+
+              <div class="stat-icon">
+
+                <i class="fa-solid fa-laptop-code" aria-hidden="true">
+                </i>
+
+              </div>
+
+              <div>
+
+                <strong>
+                  01
+                </strong>
+
+                <span>
+                  Projeto principal
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="stat-card" data-tilt>
+
+              <div class="stat-icon">
+
+                <i class="fa-solid fa-layer-group" aria-hidden="true">
+                </i>
+
+              </div>
+
+              <div>
+
+                <strong>
+                  10+
+                </strong>
+
+                <span>
+                  Tecnologias exploradas
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="stat-card" data-tilt>
+
+              <div class="stat-icon">
+
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true">
+                </i>
+
+              </div>
+
+              <div>
+
+                <strong>
+                  5º
+                </strong>
+
+                <span>
+                  Ano de Ciências da Computação
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="stat-card" data-tilt>
+
+              <div class="stat-icon">
+
+                <i class="fa-solid fa-location-dot" aria-hidden="true">
+                </i>
+
+              </div>
+
+              <div>
+
+                <strong>
+                  AO
+                </strong>
+
+                <span>
+                  Moxico, Angola
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+             COMPETÊNCIAS
+        ================================================== -->
+
+    <section id="competencias" class="section section-dark">
+
+      <div class="section-container">
+
+
+        <div class="section-header reveal">
+
+          <span class="section-number">
+            02
+          </span>
+
+          <div>
+
+            <p class="section-label">
+              COMPETÊNCIAS
+            </p>
+
+            <h2 class="section-title">
+              O que faço.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+          <article class="skill-card reveal" data-tilt>
+
+            <div class="skill-number">
+              01
+            </div>
+
+            <div class="skill-icon">
+
+              <i class="fa-solid fa-globe" aria-hidden="true">
+              </i>
+
+            </div>
+
+            <h3>
+              Desenvolvimento Web
+            </h3>
+
+            <p>
+
+              Desenvolvimento de interfaces
+              modernas, responsivas e orientadas
+              para uma experiência de utilização
+              clara e intuitiva.
+
+            </p>
+
+            <div class="skill-tags">
+
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Tailwind CSS</span>
+
+            </div>
+
+          </article>
+
+
+          <article class="skill-card reveal" data-tilt>
+
+            <div class="skill-number">
+              02
+            </div>
+
+            <div class="skill-icon">
+
+              <i class="fa-solid fa-server" aria-hidden="true">
+              </i>
+
+            </div>
+
+            <h3>
+              Backend & Sistemas
+            </h3>
+
+            <p>
+
+              Desenvolvimento de aplicações,
+              sistemas web, APIs, lógica de
+              negócio e integração com bases
+              de dados.
+
+            </p>
+
+            <div class="skill-tags">
+
+              <span>Python</span>
+              <span>Django</span>
+              <span>SQL</span>
+              <span>SQLite</span>
+
+            </div>
+
+          </article>
+
+
+          <article class="skill-card reveal" data-tilt>
+
+            <div class="skill-number">
+              03
+            </div>
+
+            <div class="skill-icon">
+
+              <i class="fa-solid fa-brain" aria-hidden="true">
+              </i>
+
+            </div>
+
+            <h3>
+              Inteligência Artificial
+            </h3>
+
+            <p>
+
+              Exploração de Machine Learning,
+              redes neurais e Visão Computacional
+              aplicada a problemas reais.
+
+            </p>
+
+            <div class="skill-tags">
+
+              <span>TensorFlow</span>
+              <span>Keras</span>
+              <span>CNN</span>
+              <span>Computer Vision</span>
+
+            </div>
+
+          </article>
+
+
+          <article class="skill-card reveal" data-tilt>
+
+            <div class="skill-number">
+              04
+            </div>
+
+            <div class="skill-icon">
+
+              <i class="fa-solid fa-database" aria-hidden="true">
+              </i>
+
+            </div>
+
+            <h3>
+              Bases de Dados
+            </h3>
+
+            <p>
+
+              Organização, modelação e utilização
+              de bases de dados para aplicações
+              e sistemas digitais.
+
+            </p>
+
+            <div class="skill-tags">
+
+              <span>SQLite</span>
+              <span>MySQL</span>
+              <span>SQL</span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+             PROJETOS
+        ================================================== -->
+
+    <section id="projetos" class="section">
+
+      <div class="section-container">
+
+
+        <div class="section-header reveal">
+
+          <span class="section-number">
+            03
+          </span>
+
+          <div>
+
+            <p class="section-label">
+              PORTFÓLIO
+            </p>
+
+            <h2 class="section-title">
+              Projetos em destaque.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROJETO PRINCIPAL -->
+
+        <article class="featured-project reveal">
+
+
+          <div class="project-content">
+
+            <div class="project-label">
+              PROJETO PRINCIPAL
+            </div>
+
+
+            <h3>
+
+              AgroIA
+
+              <span>
+                Moxico
+              </span>
+
+            </h3>
+
+
+            <p class="project-description">
+
+              Plataforma web de apoio à agricultura
+              que utiliza Inteligência Artificial
+              e Visão Computacional para auxiliar
+              na identificação de possíveis doenças
+              em culturas agrícolas através de
+              imagens.
+
+            </p>
+
+
+            <div class="project-tech">
+
+              <span>
+                <i class="fa-brands fa-python"></i>
+                Python
+              </span>
+
+              <span>
+                <i class="fa-solid fa-globe"></i>
+                Django
+              </span>
+
+              <span>
+                <i class="fa-solid fa-brain"></i>
+                TensorFlow
+              </span>
+
+              <span>
+                <i class="fa-brands fa-js"></i>
+                JavaScript
+              </span>
+
+              <span>
+                <i class="fa-solid fa-database"></i>
+                SQLite
+              </span>
+
+            </div>
+
+
+            <div class="project-actions">
+
+
+              <a href="#" class="btn btn-primary">
+
+                Ver projeto
+
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true">
+                </i>
+
+              </a>
+
+
+              <a href="#" class="project-github">
+
+                <i class="fa-brands fa-github" aria-hidden="true">
+                </i>
+
+                GitHub
+
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="project-visual">
+
+            <div class="project-screen">
+
+
+              <div class="screen-top">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+              </div>
+
+
+              <div class="screen-content">
+
+                <div class="screen-icon">
+
+                  <i class="fa-solid fa-leaf" aria-hidden="true">
+                  </i>
+
+                </div>
+
+
+                <span>
+                  AgroIA Moxico
+                </span>
+
+
+                <small>
+                  Inteligência aplicada ao campo
+                </small>
+
+
+                <div class="screen-data">
+
+
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- OUTROS PROJETOS -->
+
+        <div class="projects-grid">
+
+
+          <article class="project-card reveal" data-tilt>
+
+            <div class="project-card-icon">
+
+              <i class="fa-solid fa-code" aria-hidden="true">
+              </i>
+
+            </div>
+
+
+            <span class="project-type">
+              DESENVOLVIMENTO WEB
+            </span>
+
+
+            <h3>
+              Aplicações Web
+            </h3>
+
+
+            <p>
+
+              Desenvolvimento de interfaces
+              e aplicações web modernas,
+              responsivas e funcionais.
+
+            </p>
+
+
+            <a href="#contacto">
+
+              Saber mais
+
+              <i class="fa-solid fa-arrow-right" aria-hidden="true">
+              </i>
+
+            </a>
+
+          </article>
+
+
+          <article class="project-card reveal" data-tilt>
+
+            <div class="project-card-icon">
+
+              <i class="fa-solid fa-robot" aria-hidden="true">
+              </i>
+
+            </div>
+
+
+            <span class="project-type">
+              INTELIGÊNCIA ARTIFICIAL
+            </span>
+
+
+            <h3>
+              Sistemas Inteligentes
+            </h3>
+
+
+            <p>
+
+              Exploração de soluções baseadas
+              em Machine Learning, redes neurais
+              e Inteligência Artificial.
+
+            </p>
+
+
+            <a href="#contacto">
+
+              Saber mais
+
+              <i class="fa-solid fa-arrow-right" aria-hidden="true">
+              </i>
+
+            </a>
+
+          </article>
+
+
+          <article class="project-card reveal" data-tilt>
+
+            <div class="project-card-icon">
+
+              <i class="fa-solid fa-database" aria-hidden="true">
+              </i>
+
+            </div>
+
+
+            <span class="project-type">
+              SISTEMAS & DADOS
+            </span>
+
+
+            <h3>
+              Sistemas de Informação
+            </h3>
+
+
+            <p>
+
+              Desenvolvimento de sistemas
+              com gestão de dados, utilizadores
+              e processos.
+
+            </p>
+
+
+            <a href="#contacto">
+
+              Saber mais
+
+              <i class="fa-solid fa-arrow-right" aria-hidden="true">
+              </i>
+
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+             FORMAÇÃO
+        ================================================== -->
+
+    <section id="formacao" class="section section-soft">
+
+      <div class="section-container">
+
+
+        <div class="section-header reveal">
+
+          <span class="section-number">
+            04
+          </span>
+
+          <div>
+
+            <p class="section-label">
+              FORMAÇÃO
+            </p>
+
+            <h2 class="section-title">
+              Minha trajetória.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+          <!-- FORMAÇÃO SUPERIOR -->
+
+          <div class="timeline-item reveal">
+
+            <div class="timeline-marker">
+
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true">
+              </i>
+
+            </div>
+
+
+            <div class="timeline-content">
+
+              <span class="timeline-date">
+                FORMAÇÃO SUPERIOR
+              </span>
+
+
+              <h3>
+                Ciências da Computação
+              </h3>
+
+
+              <p class="timeline-place">
+
+                Instituto Superior Politécnico
+                do Moxico
+
+              </p>
+
+
+              <p>
+
+                Formação superior em Ciências
+                da Computação, com contacto com
+                programação, desenvolvimento
+                de sistemas, bases de dados,
+                engenharia de software e
+                tecnologias computacionais.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- PROJETOS E PRÁTICA -->
+
+          <div class="timeline-item reveal">
+
+            <div class="timeline-marker">
+
+              <i class="fa-solid fa-laptop-code" aria-hidden="true">
+              </i>
+
+            </div>
+
+
+            <div class="timeline-content">
+
+              <span class="timeline-date">
+                PROJETOS & PRÁTICA
+              </span>
+
+
+              <h3>
+                Desenvolvimento de soluções
+                tecnológicas
+              </h3>
+
+
+              <p class="timeline-place">
+
+                Projetos académicos e pessoais
+
+              </p>
+
+
+              <p>
+
+                Desenvolvimento prático de
+                aplicações web, sistemas de
+                informação e soluções tecnológicas,
+                explorando programação, bases de
+                dados, desenvolvimento web e
+                Inteligência Artificial.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- ENSINO MÉDIO -->
+
+          <div class="timeline-item reveal">
+
+            <div class="timeline-marker">
+
+              <i class="fa-solid fa-flask" aria-hidden="true">
+              </i>
+
+            </div>
+
+
+            <div class="timeline-content">
+
+              <span class="timeline-date">
+                ENSINO MÉDIO
+              </span>
+
+
+              <h3>
+                Ciências Físicas e Biológicas
+              </h3>
+
+
+              <p class="timeline-place">
+
+                Complexo Escolar CD Tchifuchi
+                nº 338
+
+              </p>
+
+
+              <p>
+
+                Formação do ensino médio na área
+                de Ciências Físicas e Biológicas,
+                estabelecendo uma base científica
+                para a formação superior.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+             TECNOLOGIAS
+        ================================================== -->
+
+    <section id="tecnologias" class="section">
+
+      <div class="section-container">
+
+
+        <div class="section-header reveal">
+
+          <span class="section-number">
+            05
+          </span>
+
+          <div>
+
+            <p class="section-label">
+              TECNOLOGIAS
+            </p>
+
+            <h2 class="section-title">
+              Ferramentas que utilizo.
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="technology-grid">
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-brands fa-python"></i>
+            <span>Python</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-globe"></i>
+            <span>Django</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-wind"></i>
+            <span>Tailwind CSS</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-brain"></i>
+            <span>TensorFlow</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-network-wired"></i>
+            <span>Keras</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-database"></i>
+            <span>MySQL</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-table"></i>
+            <span>SQLite</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-code"></i>
+            <span>VS Code</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>NetBeans</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>MySQL Workbench</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-brands fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-file-word"></i>
+            <span>Microsoft Word</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-file-excel"></i>
+            <span>Microsoft Excel</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-file-powerpoint"></i>
+            <span>PowerPoint</span>
+          </div>
+
+
+          <div class="technology-card reveal" data-tilt>
+            <i class="fa-solid fa-pen-nib"></i>
+            <span>Photoshop</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =================================================
+             CONTACTO
+        ================================================== -->
+
+    <section id="contacto" class="section contact-section">
+
+      <div class="section-container">
+
+
+        <div class="contact-card reveal">
+
+
+          <div class="contact-content">
+
+            <span class="section-label">
+              CONTACTO
+            </span>
+
+
+            <h2>
+              Vamos transformar
+              ideias em soluções.
+            </h2>
+
+
+            <p>
+
+              Tens uma ideia, projeto ou
+              oportunidade interessante?
+              Vamos conversar e explorar
+              como a tecnologia pode ajudar.
+
+            </p>
+
+
+            <a href="mailto:alexosalvadorjose2612@gmail.com" class="btn btn-primary">
+
+              Enviar mensagem
+
+              <i class="fa-regular fa-paper-plane" aria-hidden="true">
+              </i>
+
+            </a>
+
+          </div>
+
+
+          <div class="contact-info">
+
+
+            <a href="mailto:alexosalvadorjose2612@gmail.com" class="contact-item">
+
+              <div class="contact-icon">
+
+                <i class="fa-regular fa-envelope" aria-hidden="true">
+                </i>
+
+              </div>
+
+
+              <div>
+
+                <span>
+                  Email
+                </span>
+
+                <strong>
+                  alexosalvadorjose2612@gmail.com
+                </strong>
+
+              </div>
+
+            </a>
+
+
+            <a href="tel:+244927607160" class="contact-item">
+
+              <div class="contact-icon">
+
+                <i class="fa-solid fa-phone" aria-hidden="true">
+                </i>
+
+              </div>
+
+
+              <div>
+
+                <span>
+                  Telefone
+                </span>
+
+                <strong>
+                  +244 927 607 160
+                </strong>
+
+              </div>
+
+            </a>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">
+
+                <i class="fa-solid fa-location-dot" aria-hidden="true">
+                </i>
+
+              </div>
+
+
+              <div>
+
+                <span>
+                  Localização
+                </span>
+
+                <strong>
+                  Moxico, Angola
+                </strong>
+
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">
+
+                <i class="fa-solid fa-circle-check" aria-hidden="true">
+                </i>
+
+              </div>
+
+
+              <div>
+
+                <span>
+                  Disponibilidade
+                </span>
+
+                <strong>
+                  Aberto a oportunidades
+                </strong>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+
+      <div class="footer-main">
+
+
+        <!-- =================================================
+                     BRAND
+                ================================================== -->
+
+        <div class="footer-column footer-brand-column">
+
+          <a href="#inicio" class="logo" aria-label="Voltar ao início">
+
+            <span class="logo-mark">
+              A
+            </span>
+
+            <span class="logo-text">
+              Alexo<span>.</span>
+            </span>
+
+          </a>
+
+
+          <p class="footer-description">
+
+            Desenvolvedor de Software &
+            Entusiasta de Inteligência Artificial.
+            Criando soluções digitais com tecnologia,
+            criatividade e propósito.
+
+          </p>
+
+
+          <div class="footer-location">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>
+              Moxico, Angola
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+                     NAVEGAÇÃO
+                ================================================== -->
+
+        <div class="footer-column">
+
+          <h3 class="footer-heading">
+            Navegação
+          </h3>
+
+
+          <div class="footer-links">
+
+
+            <a href="#inicio">
+
+              <i class="fa-solid fa-house"></i>
+
+              <span>
+                Início
+              </span>
+
+            </a>
+
+
+            <a href="#sobre">
+
+              <i class="fa-solid fa-user"></i>
+
+              <span>
+                Sobre mim
+              </span>
+
+            </a>
+
+
+            <a href="#competencias">
+
+              <i class="fa-solid fa-layer-group"></i>
+
+              <span>
+                Competências
+              </span>
+
+            </a>
+
+
+            <a href="#projetos">
+
+              <i class="fa-solid fa-code"></i>
+
+              <span>
+                Projetos
+              </span>
+
+            </a>
+
+
+            <a href="#formacao">
+
+              <i class="fa-solid fa-graduation-cap"></i>
+
+              <span>
+                Formação
+              </span>
+
+            </a>
+
+
+            <a href="#tecnologias">
+
+              <i class="fa-solid fa-microchip"></i>
+
+              <span>
+                Tecnologias
+              </span>
+
+            </a>
+
+
+            <a href="#contacto">
+
+              <i class="fa-regular fa-envelope"></i>
+
+              <span>
+                Contacto
+              </span>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- =================================================
+                     REDES SOCIAIS
+                ================================================== -->
+
+        <div class="footer-column footer-social-column">
+
+          <h3 class="footer-heading">
+            Conecte-se
+          </h3>
+
+
+          <div class="footer-social-new">
+
+
+            <!-- GITHUB -->
+
+            <a href="#" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+              title="GitHub">
+
+              <i class="fa-brands fa-github"></i>
+
+              <span>
+                GitHub
+              </span>
+
+            </a>
+
+
+            <!-- LINKEDIN -->
+
+            <a href="#" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+              title="LinkedIn">
+
+              <i class="fa-brands fa-linkedin-in"></i>
+
+              <span>
+                LinkedIn
+              </span>
+
+            </a>
+
+
+            <!-- FACEBOOK -->
+
+            <a href="#" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+              title="Facebook">
+
+              <i class="fa-brands fa-facebook-f"></i>
+
+              <span>
+                Facebook
+              </span>
+
+            </a>
+
+
+            <!-- INSTAGRAM -->
+
+            <a href="#" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+              title="Instagram">
+
+              <i class="fa-brands fa-instagram"></i>
+
+              <span>
+                Instagram
+              </span>
+
+            </a>
+
+
+            <!-- TIKTOK -->
+
+            <a href="#" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok"
+              title="TikTok">
+
+              <i class="fa-brands fa-tiktok"></i>
+
+              <span>
+                TikTok
+              </span>
+
+            </a>
+
+
+            <!-- EMAIL -->
+
+            <a href="mailto:alexosalvadorjose2612@gmail.com" class="footer-social-link" aria-label="Enviar email"
+              title="Email">
+
+              <i class="fa-regular fa-envelope"></i>
+
+              <span>
+                Email
+              </span>
+
+            </a>
+
+
+            <!-- TELEFONE -->
+
+            <a href="tel:+244927607160" class="footer-social-link" aria-label="Telefone" title="Telefone">
+
+              <i class="fa-solid fa-phone"></i>
+
+              <span>
+                Telefone
+              </span>
+
+            </a>
+
+
+            <!-- WHATSAPP -->
+
+            <a href="https://wa.me/244927607160" class="footer-social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp" title="WhatsApp">
+
+              <i class="fa-brands fa-whatsapp"></i>
+
+              <span>
+                WhatsApp
+              </span>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+                 DIVISOR
+            ================================================== -->
+
+      <div class="footer-divider"></div>
+
+
+      <!-- =================================================
+                 FOOTER BOTTOM
+            ================================================== -->
+
+      <div class="footer-bottom-new">
+
+
+        <span>
+
+          <span>
+            ©
+          </span>
+
+          <span data-current-year></span>
+
+          <span>
+            Alexo Salvador José.
+          </span>
+
+          <span>
+            Todos os direitos reservados.
+          </span>
+
+        </span>
+
+
+        <span class="footer-tech">
+
+          Construído com
+
+          <strong>
+            HTML5
+          </strong>
+
+          ·
+
+          <strong>
+            Tailwind CSS
+          </strong>
+
+          ·
+
+          <strong>
+            JavaScript
+          </strong>
+
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Voltar ao topo">
+
+    <i class="fa-solid fa-arrow-up" aria-hidden="true">
+    </i>
+
+  </button>
+
+
+  <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
