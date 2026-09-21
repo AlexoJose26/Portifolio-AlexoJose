@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
@@ -29,20 +28,21 @@
     Alexo Salvador José — Desenvolvedor Web, Mobile & Backend
   </title>
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
     rel="stylesheet">
 
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+  <!-- =========================================================
+       PRELOADER
+  ========================================================== -->
 
   <div id="preloader">
     <div class="loader-wrapper">
@@ -51,15 +51,20 @@
     </div>
   </div>
 
+  <!-- =========================================================
+       BACKGROUND
+  ========================================================== -->
 
   <div class="site-background">
     <div class="background-grid"></div>
-
     <div class="background-orb orb-one"></div>
     <div class="background-orb orb-two"></div>
     <div class="background-orb orb-three"></div>
   </div>
 
+  <!-- =========================================================
+       NAVBAR
+  ========================================================== -->
 
   <header id="navbar">
 
@@ -70,100 +75,76 @@
         <span class="logo-text">AlexoJosé</span>
       </a>
 
-
-
-
       <nav class="desktop-menu">
 
         <a href="#inicio" class="nav-link active">
-          <svg viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M3 10.5 12 3l9 7.5"></path>
             <path d="M5 9.5V21h14V9.5"></path>
             <path d="M9 21v-7h6v7"></path>
           </svg>
-
           <span>Início</span>
         </a>
 
-
         <a href="#sobre" class="nav-link">
-          <svg viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="8" r="4"></circle>
-
             <path d="M4 21c0-4 3.2-7 8-7s8 3 8 7"></path>
           </svg>
-
           <span>Sobre</span>
         </a>
 
-
         <a href="#competencias" class="nav-link">
-          <svg viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12 3 4 7v6c0 4.5 3.2 7 8 8 4.8-1 8-3.5 8-8V7l-8-4Z"></path>
             <path d="m8.5 12 2.2 2.2 4.8-5"></path>
           </svg>
-
           <span>Competências</span>
         </a>
 
-
         <a href="#aplicacoes" class="nav-link">
-          <svg viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <rect x="5" y="3" width="14" height="18" rx="2"></rect>
-
             <path d="M9 7h6M9 11h6M9 15h3"></path>
           </svg>
-
           <span>Apps</span>
         </a>
 
-
         <a href="#projetos" class="nav-link">
-          <svg viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M3 7h7l2 2h9v10H3z"></path>
             <path d="M3 7V5h7l2 2"></path>
           </svg>
-
           <span>Projetos</span>
         </a>
 
-
         <a href="#formacao" class="nav-link">
-          <svg viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="m3 9 9-5 9 5-9 5-9-5Z"></path>
             <path d="M7 11v5c2.5 2 7.5 2 10 0v-5"></path>
             <path d="M21 9v6"></path>
           </svg>
-
           <span>Formação</span>
         </a>
 
-
         <a href="#tecnologias" class="nav-link">
-          <svg viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <rect x="3" y="4" width="18" height="14" rx="2"></rect>
-
             <path d="M8 21h8M12 18v3"></path>
             <path d="m8 10 2 2-2 2M12 14h4"></path>
           </svg>
-
           <span>Tecnologias</span>
         </a>
 
-
         <a href="#contacto" class="nav-button">
-          <svg viewBox="0 0 24 24">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M4 5h16v12H8l-4 4V5Z"></path>
             <path d="M8 9h8M8 13h5"></path>
           </svg>
-
           <span>Contacto</span>
         </a>
 
       </nav>
-
-
-      <!-- BOTÃO MOBILE -->
 
       <button class="mobile-menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
         <span></span>
@@ -173,92 +154,71 @@
 
     </div>
 
-
-    <!-- =======================================================
-         MENU MOBILE
-    ======================================================== -->
+    <!-- MENU MOBILE -->
 
     <div class="mobile-menu">
 
       <a href="#inicio" class="nav-link">
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M3 10.5 12 3l9 7.5"></path>
           <path d="M5 9.5V21h14V9.5"></path>
           <path d="M9 21v-7h6v7"></path>
         </svg>
-
         <span>Início</span>
       </a>
 
-
       <a href="#sobre" class="nav-link">
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="12" cy="8" r="4"></circle>
-
           <path d="M4 21c0-4 3.2-7 8-7s8 3 8 7"></path>
         </svg>
-
         <span>Sobre mim</span>
       </a>
 
-
       <a href="#competencias" class="nav-link">
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M12 3 4 7v6c0 4.5 3.2 7 8 8 4.8-1 8-3.5 8-8V7l-8-4Z"></path>
           <path d="m8.5 12 2.2 2.2 4.8-5"></path>
         </svg>
-
         <span>Competências</span>
       </a>
 
-
       <a href="#aplicacoes" class="nav-link">
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <rect x="5" y="3" width="14" height="18" rx="2"></rect>
-
           <path d="M9 7h6M9 11h6M9 15h3"></path>
         </svg>
-
         <span>Mobile</span>
       </a>
 
-
       <a href="#projetos" class="nav-link">
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M3 7h7l2 2h9v10H3z"></path>
           <path d="M3 7V5h7l2 2"></path>
         </svg>
-
         <span>Projetos</span>
       </a>
 
-
       <a href="#formacao" class="nav-link">
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="m3 9 9-5 9 5-9 5-9-5Z"></path>
           <path d="M7 11v5c2.5 2 7.5 2 10 0v-5"></path>
         </svg>
-
         <span>Formação</span>
       </a>
 
-
       <a href="#tecnologias" class="nav-link">
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <rect x="3" y="4" width="18" height="14" rx="2"></rect>
-
           <path d="M8 21h8M12 18v3"></path>
         </svg>
-
         <span>Tecnologias</span>
       </a>
 
-
       <a href="#contacto" class="nav-link">
-        <svg viewBox="0 0 24 24">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M4 5h16v12H8l-4 4V5Z"></path>
         </svg>
-
         <span>Contacto</span>
       </a>
 
@@ -266,17 +226,13 @@
 
   </header>
 
-
   <!-- =========================================================
        CONTEÚDO PRINCIPAL
   ========================================================== -->
 
   <main>
 
-
-    <!-- =======================================================
-         HERO
-    ======================================================== -->
+    <!-- HERO -->
 
     <section id="inicio" class="hero-section section">
 
@@ -289,22 +245,18 @@
             Disponível para oportunidades
           </div>
 
-
           <p class="hero-overline">
             DESENVOLVEDOR • CRIADOR • SOLUCIONADOR
           </p>
-
 
           <h1 class="hero-title">
             Alexo Salvador
             <span>José</span>
           </h1>
 
-
           <h2 class="hero-role">
             Desenvolvedor Web & Criador de Soluções Digitais
           </h2>
-
 
           <p class="hero-description">
             Sou um estudante de Ciências da Computação e desenvolvedor
@@ -313,93 +265,75 @@
             digitais funcionais, organizados e preparados para crescer.
           </p>
 
-
           <div class="hero-specialties">
 
             <span class="hero-specialty">
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"></path>
               </svg>
-
               Desenvolvimento Web
             </span>
 
-
             <span class="hero-specialty">
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <rect x="6" y="3" width="12" height="18" rx="2"></rect>
-
                 <path d="M10 6h4M10 18h4"></path>
               </svg>
-
               Aplicações
             </span>
 
-
             <span class="hero-specialty">
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M4 5h16v14H4z"></path>
                 <path d="m8 10 2 2-2 2M12 14h4"></path>
               </svg>
-
               Backend
             </span>
 
-
             <span class="hero-specialty">
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <ellipse cx="12" cy="6" rx="7" ry="3"></ellipse>
-
                 <path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path>
-
                 <path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path>
               </svg>
-
               Bases de Dados
             </span>
 
           </div>
 
-
           <div class="hero-actions">
 
             <a href="#projetos" class="btn btn-primary">
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M3 7h7l2 2h9v10H3z"></path>
                 <path d="M3 7V5h7l2 2"></path>
               </svg>
-
               Ver projetos
             </a>
 
-
             <a href="#contacto" class="btn btn-outline">
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M4 5h16v12H8l-4 4V5Z"></path>
               </svg>
-
               Entrar em contacto
             </a>
 
           </div>
 
-
           <div class="hero-social">
 
             <div class="social-links">
 
-              <a href="https://github.com/AlexoJose26/" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/AlexoJose26/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 GitHub
               </a>
 
-
-              <a href="https://www.linkedin.com/in/alexo-jos%C3%A9-779a0134b/" target="_blank"
-                rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/alexo-jos%C3%A9-779a0134b/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
                 LinkedIn
               </a>
 
-
-              <a href="mailto:alexosalvadorjose2612@gmail.com">
+              <a href="mailto:alexosalvadorjose2612@gmail.com" aria-label="Email">
                 Email
               </a>
 
@@ -409,15 +343,12 @@
 
         </div>
 
-
         <div class="hero-visual reveal">
 
           <div class="hero-photo-wrapper">
 
             <div class="hero-photo-card">
-
               <img src="images/foto-Alexo.png" alt="Alexo Salvador José" class="hero-photo">
-
             </div>
 
             <div class="photo-glow"></div>
@@ -428,7 +359,6 @@
 
       </div>
 
-
       <div class="scroll-indicator">
         <span>Explorar</span>
         <div></div>
@@ -436,10 +366,7 @@
 
     </section>
 
-
-    <!-- =======================================================
-         SOBRE
-    ======================================================== -->
+    <!-- SOBRE -->
 
     <section id="sobre" class="section">
 
@@ -458,7 +385,6 @@
           </h2>
 
         </div>
-
 
         <div class="about-grid">
 
@@ -495,14 +421,12 @@
 
             <a href="#contacto" class="text-link">
               Vamos conversar sobre um projeto
-
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M5 12h14M13 6l6 6-6 6"></path>
               </svg>
             </a>
 
           </div>
-
 
           <div class="about-stats reveal">
 
@@ -512,46 +436,38 @@
                   <path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"></path>
                 </svg>
               </div>
-
               <strong>Web & Backend</strong>
               <span>
                 Aplicações web, APIs e serviços digitais.
               </span>
             </div>
 
-
             <div class="stat-card">
               <div class="stat-icon">
                 <svg viewBox="0 0 24 24">
                   <rect x="6" y="3" width="12" height="18" rx="2"></rect>
-
                   <path d="M10 6h4M10 18h4"></path>
                 </svg>
               </div>
-
               <strong>Mobile</strong>
               <span>
                 Aplicações multiplataforma com React Native.
               </span>
             </div>
 
-
             <div class="stat-card">
               <div class="stat-icon">
                 <svg viewBox="0 0 24 24">
                   <ellipse cx="12" cy="6" rx="7" ry="3"></ellipse>
-
                   <path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path>
                   <path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path>
                 </svg>
               </div>
-
               <strong>Dados</strong>
               <span>
                 Modelação, SQL e integração de dados.
               </span>
             </div>
-
 
             <div class="stat-card">
               <div class="stat-icon">
@@ -560,7 +476,6 @@
                   <path d="m8.5 12 2.2 2.2 4.8-5"></path>
                 </svg>
               </div>
-
               <strong>AgroIA</strong>
               <span>
                 Projeto que une software, dados e IA.
@@ -575,10 +490,7 @@
 
     </section>
 
-
-    <!-- =======================================================
-         COMPETÊNCIAS
-    ======================================================== -->
+    <!-- COMPETÊNCIAS -->
 
     <section id="competencias" class="section section-soft">
 
@@ -597,22 +509,17 @@
 
         </div>
 
-
         <div class="areas-intro reveal">
-
           <p>
             Um conjunto de competências técnicas e criativas que me
             permite participar em diferentes etapas de criação de uma
             solução digital.
           </p>
-
         </div>
-
 
         <div class="areas-grid">
 
           <article class="area-card reveal">
-
             <span class="area-number">01</span>
 
             <div class="area-icon">
@@ -634,18 +541,14 @@
               <span>JavaScript</span>
               <span>Django</span>
             </div>
-
           </article>
 
-
           <article class="area-card reveal">
-
             <span class="area-number">02</span>
 
             <div class="area-icon">
               <svg viewBox="0 0 24 24">
                 <rect x="6" y="3" width="12" height="18" rx="2"></rect>
-
                 <path d="M10 6h4M10 18h4"></path>
               </svg>
             </div>
@@ -662,18 +565,14 @@
               <span>Expo</span>
               <span>TypeScript</span>
             </div>
-
           </article>
 
-
           <article class="area-card reveal">
-
             <span class="area-number">03</span>
 
             <div class="area-icon">
               <svg viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="8"></circle>
-
                 <path d="M12 8v4l3 2"></path>
               </svg>
             </div>
@@ -690,18 +589,14 @@
               <span>Requisitos</span>
               <span>Modelação</span>
             </div>
-
           </article>
 
-
           <article class="area-card reveal">
-
             <span class="area-number">04</span>
 
             <div class="area-icon">
               <svg viewBox="0 0 24 24">
                 <ellipse cx="12" cy="6" rx="7" ry="3"></ellipse>
-
                 <path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path>
                 <path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path>
               </svg>
@@ -720,12 +615,9 @@
               <span>SQLite</span>
               <span>MySQL</span>
             </div>
-
           </article>
 
-
           <article class="area-card reveal">
-
             <span class="area-number">05</span>
 
             <div class="area-icon">
@@ -747,12 +639,9 @@
               <span>Apps</span>
               <span>Automação</span>
             </div>
-
           </article>
 
-
           <article class="area-card reveal">
-
             <span class="area-number">06</span>
 
             <div class="area-icon">
@@ -774,18 +663,14 @@
               <span>Design</span>
               <span>Conteúdo</span>
             </div>
-
           </article>
 
-
           <article class="area-card reveal">
-
             <span class="area-number">07</span>
 
             <div class="area-icon">
               <svg viewBox="0 0 24 24">
                 <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-
                 <path d="M8 21h8M12 19v2"></path>
               </svg>
             </div>
@@ -802,12 +687,9 @@
               <span>Software</span>
               <span>Suporte</span>
             </div>
-
           </article>
 
-
           <article class="area-card reveal">
-
             <span class="area-number">08</span>
 
             <div class="area-icon">
@@ -829,7 +711,6 @@
               <span>Instagram</span>
               <span>TikTok</span>
             </div>
-
           </article>
 
         </div>
@@ -838,10 +719,7 @@
 
     </section>
 
-
-    <!-- =======================================================
-         MOBILE — AGORA É UMA SECTION INDEPENDENTE
-    ======================================================== -->
+    <!-- MOBILE -->
 
     <section id="aplicacoes" class="section mobile-app-section">
 
@@ -860,33 +738,21 @@
 
         </div>
 
-
         <div class="mobile-app-showcase reveal">
-
-
-          <!-- =================================================
-               CONTEÚDO MOBILE
-          ================================================== -->
 
           <div class="mobile-app-copy">
 
             <span class="mobile-app-kicker">
-
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
                 <rect x="6" y="3" width="12" height="18" rx="2"></rect>
-
                 <path d="M10 6h4M10 18h4"></path>
               </svg>
-
               REACT NATIVE • EXPO
-
             </span>
-
 
             <h3>
               Desenvolvimento de aplicações multiplataforma.
             </h3>
-
 
             <p>
               Crio aplicações mobile com React Native, procurando combinar
@@ -894,106 +760,72 @@
               integração consistente com APIs.
             </p>
 
-
             <div class="mobile-app-tags">
 
               <span>
-
                 <svg viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="8"></circle>
-
                   <path d="M4 12h16"></path>
-
                   <path d="M12 4c2.2 2.2 3.4 4.9 3.4 8s-1.2 5.8-3.4 8c-2.2-2.2-3.4-4.9-3.4-8S9.8 6.2 12 4Z"></path>
                 </svg>
-
                 React Native
-
               </span>
 
-
               <span>
-
                 <svg viewBox="0 0 24 24">
                   <path d="M12 3v18M3 12h18"></path>
-
                   <circle cx="12" cy="12" r="7"></circle>
                 </svg>
-
                 Expo
-
               </span>
 
-
               <span>
-
                 <svg viewBox="0 0 24 24">
                   <path d="M4 5h16v14H4z"></path>
                   <path d="m8 10 2 2-2 2M12 14h4"></path>
                 </svg>
-
                 TypeScript
-
               </span>
 
-
               <span>
-
                 <svg viewBox="0 0 24 24">
                   <path d="M4 5h16v12H8l-4 4V5Z"></path>
                 </svg>
-
                 REST APIs
-
               </span>
 
             </div>
 
-
             <div class="mobile-app-actions">
 
               <a href="#contacto" class="btn btn-primary">
-
                 <svg viewBox="0 0 24 24">
                   <path d="M4 5h16v12H8l-4 4V5Z"></path>
                 </svg>
-
                 Falar sobre uma aplicação
-
               </a>
-
 
               <a class="btn btn-outline mobile-app-link" href="https://app-booknook.vercel.app/" target="_blank"
                 rel="noopener noreferrer" aria-label="Abrir a minha aplicação React Native">
-
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M13 5h6v6"></path>
                   <path d="M10 14 19 5"></path>
                   <path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path>
                 </svg>
-
                 Abrir minha aplicação
-
               </a>
 
             </div>
 
           </div>
 
-
-          <!-- =================================================
-               MOCKUP DO TELEMÓVEL
-          ================================================== -->
-
           <div class="mobile-device-wrap">
 
             <div class="mobile-glow"></div>
 
-
             <div class="mobile-device">
 
               <div class="mobile-device-speaker"></div>
-
 
               <div class="mobile-device-screen">
 
@@ -1002,29 +834,20 @@
                   <span>● ● ●</span>
                 </div>
 
-
                 <div class="mobile-app-logo">
-
                   <svg viewBox="0 0 24 24">
-
                     <path d="M12 3 4 7v6c0 4.5 3.2 7 8 8 4.8-1 8-3.5 8-8V7l-8-4Z"></path>
-
                     <path d="m8.5 12 2.2 2.2 4.8-5"></path>
-
                   </svg>
-
                 </div>
-
 
                 <strong>
                   Aplicação Mobile
                 </strong>
 
-
                 <span>
                   React Native
                 </span>
-
 
                 <div class="mobile-mini-cards">
                   <span></span>
@@ -1044,10 +867,7 @@
 
     </section>
 
-
-    <!-- =======================================================
-         PROJETOS
-    ======================================================== -->
+    <!-- PROJETOS -->
 
     <section id="projetos" class="section">
 
@@ -1066,7 +886,6 @@
 
         </div>
 
-
         <div class="featured-project reveal">
 
           <div class="project-content">
@@ -1075,11 +894,9 @@
               PROJETO EM DESTAQUE
             </span>
 
-
             <h3>
               AgroIA Moxico
             </h3>
-
 
             <p class="project-description">
               Plataforma digital dedicada ao contexto agrícola de
@@ -1089,7 +906,6 @@
               diagnóstico de culturas.
             </p>
 
-
             <div class="project-tech">
               <span>Python</span>
               <span>Django</span>
@@ -1098,23 +914,32 @@
               <span>IA</span>
             </div>
 
-
             <div class="project-actions">
 
               <a href="https://agroia-moxico.vercel.app/" target="_blank" rel="noopener noreferrer"
                 class="btn btn-primary">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13 5h6v6"></path>
+                  <path d="M10 14 19 5"></path>
+                  <path d="M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path>
+                </svg>
                 Visitar projeto
               </a>
 
-
               <a href="https://github.com/AlexoJose26" target="_blank" rel="noopener noreferrer" class="project-github">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 19c-4 .9-4-2-5-2"></path>
+                  <path
+                    d="M14 21v-3.9c0-1 .1-1.4-.5-2.1 1.7-.2 3.5-.8 3.5-4.1 0-.8-.3-1.5-.8-2 .1-.2.3-1-.1-2-.6-.2-2 .8-2 .8a6.9 6.9 0 0 0-3.6 0s-1.4-1-2-.8c-.4 1-.2 1.8-.1 2-.5.5-.8 1.2-.8 2 0 3.3 1.8 3.9 3.5 4.1-.6.6-.6 1.1-.6 2.1V21">
+                  </path>
+                  <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path>
+                </svg>
                 GitHub
               </a>
 
             </div>
 
           </div>
-
 
           <div class="project-visual">
 
@@ -1126,24 +951,19 @@
                 <span></span>
               </div>
 
-
               <div class="screen-content">
 
                 <div class="screen-icon">
-
                   <svg viewBox="0 0 24 24">
                     <path d="M5 20V9M5 9l7-5 7 5v11"></path>
                     <path d="M9 20v-6h6v6"></path>
                     <path d="M3 20h18"></path>
                   </svg>
-
                 </div>
-
 
                 <strong>
                   AgroIA Moxico
                 </strong>
-
 
                 <span>
                   Tecnologia aplicada à agricultura
@@ -1156,7 +976,6 @@
           </div>
 
         </div>
-
 
         <div class="projects-grid">
 
@@ -1183,13 +1002,11 @@
 
           </article>
 
-
           <article class="project-card reveal">
 
             <div class="project-card-icon">
               <svg viewBox="0 0 24 24">
                 <rect x="6" y="3" width="12" height="18" rx="2"></rect>
-
                 <path d="M10 6h4M10 18h4"></path>
               </svg>
             </div>
@@ -1208,7 +1025,6 @@
             </p>
 
           </article>
-
 
           <article class="project-card reveal">
 
@@ -1234,7 +1050,6 @@
 
           </article>
 
-
           <article class="project-card reveal">
 
             <div class="project-card-icon">
@@ -1258,7 +1073,6 @@
             </p>
 
           </article>
-
 
           <article class="project-card reveal">
 
@@ -1284,13 +1098,11 @@
 
           </article>
 
-
           <article class="project-card reveal">
 
             <div class="project-card-icon">
               <svg viewBox="0 0 24 24">
                 <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-
                 <path d="M8 21h8M12 19v2"></path>
               </svg>
             </div>
@@ -1316,10 +1128,7 @@
 
     </section>
 
-
-    <!-- =======================================================
-         FORMAÇÃO
-    ======================================================== -->
+    <!-- FORMAÇÃO -->
 
     <section id="formacao" class="section section-soft">
 
@@ -1338,21 +1147,16 @@
 
         </div>
 
-
         <div class="timeline">
-
 
           <div class="timeline-item reveal">
 
             <div class="timeline-marker">
-
               <svg viewBox="0 0 24 24">
                 <path d="m3 9 9-5 9 5-9 5-9-5Z"></path>
                 <path d="M7 11v5c2.5 2 7.5 2 10 0v-5"></path>
               </svg>
-
             </div>
-
 
             <div class="timeline-content">
 
@@ -1378,19 +1182,14 @@
 
           </div>
 
-
           <div class="timeline-item reveal">
 
             <div class="timeline-marker">
-
               <svg viewBox="0 0 24 24">
                 <path d="M12 3v18M3 12h18"></path>
-
                 <circle cx="12" cy="12" r="8"></circle>
               </svg>
-
             </div>
-
 
             <div class="timeline-content">
 
@@ -1416,18 +1215,14 @@
 
           </div>
 
-
           <div class="timeline-item reveal">
 
             <div class="timeline-marker">
-
               <svg viewBox="0 0 24 24">
                 <path d="m3 9 9-5 9 5-9 5-9-5Z"></path>
                 <path d="M7 11v5c2.5 2 7.5 2 10 0v-5"></path>
               </svg>
-
             </div>
-
 
             <div class="timeline-content">
 
@@ -1459,10 +1254,7 @@
 
     </section>
 
-
-    <!-- =======================================================
-         TECNOLOGIAS
-    ======================================================== -->
+    <!-- TECNOLOGIAS -->
 
     <section id="tecnologias" class="section">
 
@@ -1481,7 +1273,6 @@
 
         </div>
 
-
         <div class="tools-intro reveal">
 
           <p>
@@ -1491,9 +1282,7 @@
 
         </div>
 
-
         <div class="tools-wrapper">
-
 
           <div class="tools-category reveal">
 
@@ -1511,7 +1300,6 @@
 
             </div>
 
-
             <div class="tools-grid-new">
               <span class="tool-card-new">Python</span>
               <span class="tool-card-new">Django</span>
@@ -1525,7 +1313,6 @@
 
           </div>
 
-
           <div class="tools-category reveal">
 
             <div class="tools-category-header">
@@ -1533,11 +1320,8 @@
               <div class="tools-category-icon">
                 <svg viewBox="0 0 24 24">
                   <path d="M4 6h16M4 12h16M4 18h16"></path>
-
                   <circle cx="8" cy="6" r="1"></circle>
-
                   <circle cx="8" cy="12" r="1"></circle>
-
                   <circle cx="8" cy="18" r="1"></circle>
                 </svg>
               </div>
@@ -1547,7 +1331,6 @@
               </h3>
 
             </div>
-
 
             <div class="tools-grid-new">
               <span class="tool-card-new">Bun.js</span>
@@ -1560,7 +1343,6 @@
 
           </div>
 
-
           <div class="tools-category reveal">
 
             <div class="tools-category-header">
@@ -1568,7 +1350,6 @@
               <div class="tools-category-icon">
                 <svg viewBox="0 0 24 24">
                   <rect x="6" y="3" width="12" height="18" rx="2"></rect>
-
                   <path d="M10 6h4M10 18h4"></path>
                 </svg>
               </div>
@@ -1578,7 +1359,6 @@
               </h3>
 
             </div>
-
 
             <div class="tools-grid-new">
               <span class="tool-card-new">React Native</span>
@@ -1590,7 +1370,6 @@
 
           </div>
 
-
           <div class="tools-category reveal">
 
             <div class="tools-category-header">
@@ -1598,7 +1377,6 @@
               <div class="tools-category-icon">
                 <svg viewBox="0 0 24 24">
                   <ellipse cx="12" cy="6" rx="7" ry="3"></ellipse>
-
                   <path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"></path>
                   <path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path>
                 </svg>
@@ -1610,7 +1388,6 @@
 
             </div>
 
-
             <div class="tools-grid-new">
               <span class="tool-card-new">MySQL</span>
               <span class="tool-card-new">SQLite</span>
@@ -1619,7 +1396,6 @@
             </div>
 
           </div>
-
 
           <div class="tools-category reveal">
 
@@ -1638,7 +1414,6 @@
 
             </div>
 
-
             <div class="tools-grid-new">
               <span class="tool-card-new">VS Code</span>
               <span class="tool-card-new">NetBeans</span>
@@ -1647,7 +1422,6 @@
             </div>
 
           </div>
-
 
           <div class="tools-category reveal">
 
@@ -1666,7 +1440,6 @@
 
             </div>
 
-
             <div class="tools-grid-new">
               <span class="tool-card-new">Photoshop</span>
               <span class="tool-card-new">Design Gráfico</span>
@@ -1675,7 +1448,6 @@
             </div>
 
           </div>
-
 
           <div class="tools-category reveal">
 
@@ -1694,7 +1466,6 @@
 
             </div>
 
-
             <div class="tools-grid-new">
               <span class="tool-card-new">Word</span>
               <span class="tool-card-new">Excel</span>
@@ -1702,7 +1473,6 @@
             </div>
 
           </div>
-
 
           <div class="tools-category reveal">
 
@@ -1721,7 +1491,6 @@
 
             </div>
 
-
             <div class="tools-grid-new">
               <span class="tool-card-new">Facebook</span>
               <span class="tool-card-new">Instagram</span>
@@ -1730,7 +1499,6 @@
             </div>
 
           </div>
-
 
           <div class="tools-category reveal">
 
@@ -1749,7 +1517,6 @@
 
             </div>
 
-
             <div class="tools-grid-new">
               <span class="tool-card-new">UML</span>
               <span class="tool-card-new">Modelação</span>
@@ -1765,10 +1532,7 @@
 
     </section>
 
-
-    <!-- =======================================================
-         CONTACTO
-    ======================================================== -->
+    <!-- CONTACTO -->
 
     <section id="contacto" class="contact-section section">
 
@@ -1787,7 +1551,6 @@
 
         </div>
 
-
         <div class="contact-card reveal">
 
           <div class="contact-content">
@@ -1800,21 +1563,17 @@
                 para conversar e explorar novas possibilidades.
               </p>
 
-
               <div class="contact-item">
 
                 <div class="contact-icon">
                   <svg viewBox="0 0 24 24">
                     <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-
                     <path d="m4 7 8 6 8-6"></path>
                   </svg>
                 </div>
 
-
                 <div>
                   <span>Email</span>
-
                   <a href="mailto:alexosalvadorjose2612@gmail.com">
                     alexosalvadorjose2612@gmail.com
                   </a>
@@ -1822,80 +1581,57 @@
 
               </div>
 
-
               <div class="contact-item">
 
                 <div class="contact-icon">
-
                   <svg viewBox="0 0 24 24">
                     <path
                       d="M6 3h4l2 5-2.5 1.8a15 15 0 0 0 4.7 4.7L16 12l5 2v4c0 1.1-.9 2-2 2C10.7 20 4 13.3 4 5c0-1.1.9-2 2-2Z">
                     </path>
                   </svg>
-
                 </div>
 
-
                 <div>
-
                   <span>Telefone</span>
-
                   <a href="tel:+244927607160">
                     +244 927 607 160
                   </a>
-
                 </div>
 
               </div>
 
-
               <div class="contact-item">
 
                 <div class="contact-icon">
-
                   <svg viewBox="0 0 24 24">
                     <path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"></path>
-
                     <circle cx="12" cy="9" r="2.5"></circle>
                   </svg>
-
                 </div>
 
-
                 <div>
-
                   <span>Localização</span>
-
                   <strong>
                     Moxico, Angola
                   </strong>
-
                 </div>
 
               </div>
 
-
               <div class="contact-item">
 
                 <div class="contact-icon">
-
                   <svg viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="8"></circle>
-
                     <path d="m8 12 2.5 2.5L16 9"></path>
                   </svg>
-
                 </div>
 
-
                 <div>
-
                   <span>Disponibilidade</span>
-
                   <strong>
                     Aberto a oportunidades
                   </strong>
-
                 </div>
 
               </div>
@@ -1912,7 +1648,6 @@
 
   </main>
 
-
   <!-- =========================================================
        FOOTER
   ========================================================== -->
@@ -1923,7 +1658,6 @@
 
       <div class="footer-container">
 
-
         <!-- MARCA -->
 
         <div class="footer-column footer-brand">
@@ -1933,49 +1667,96 @@
             <span class="logo-text">AlexoJosé</span>
           </a>
 
-
           <p class="footer-description">
             Desenvolvedor e criador de soluções digitais,
             com foco em desenvolvimento web, mobile, APIs,
             sistemas e tecnologia.
           </p>
 
+          <!-- =====================================================
+               REDES SOCIAIS
+               APENAS ÍCONES — SEM NOMES VISÍVEIS
+          ====================================================== -->
 
           <div class="footer-social-new">
 
+            <!-- GitHub -->
+
             <a href="https://github.com/AlexoJose26" target="_blank" rel="noopener noreferrer"
-              class="footer-social-link" aria-label="GitHub">
-              GitHub
+              class="footer-social-link" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 19c-4 .9-4-2-5-2"></path>
+
+                <path
+                  d="M14 21v-3.9c0-1 .1-1.4-.5-2.1 1.7-.2 3.5-.8 3.5-4.1 0-.8-.3-1.5-.8-2 .1-.2.3-1-.1-2-.6-.2-2 .8-2 .8a6.9 6.9 0 0 0-3.6 0s-1.4-1-2-.8c-.4 1-.2 1.8-.1 2-.5.5-.8 1.2-.8 2 0 3.3 1.8 3.9 3.5 4.1-.6.6-.6 1.1-.6 2.1V21">
+                </path>
+
+                <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path>
+              </svg>
             </a>
 
+            <!-- LinkedIn -->
 
             <a href="https://www.linkedin.com/in/alexo-jos%C3%A9-779a0134b/" target="_blank" rel="noopener noreferrer"
-              class="footer-social-link" aria-label="LinkedIn">
-              LinkedIn
+              class="footer-social-link" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+
+                <path d="M8 10v6"></path>
+                <path d="M8 7.5v.1"></path>
+                <path d="M12 16v-3.2a2.8 2.8 0 0 1 5.6 0V16"></path>
+                <path d="M12 10v6"></path>
+              </svg>
             </a>
 
+            <!-- Facebook -->
 
             <a href="https://web.facebook.com/profile.php?id=100080870565528" target="_blank" rel="noopener noreferrer"
-              class="footer-social-link" aria-label="Facebook">
-              Facebook
+              class="footer-social-link" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                <circle cx="12" cy="12" r="9"></circle>
+
+                <path
+                  d="M13.5 8H15V5.5h-1.8C10.9 5.5 10 6.9 10 9v2H8v2.5h2V19h3v-5.5h2.2L15.5 11H13v-1.7c0-.9.2-1.3.5-1.3Z">
+                </path>
+
+              </svg>
             </a>
 
+            <!-- Instagram -->
 
             <a href="https://www.instagram.com/alexojose26/" target="_blank" rel="noopener noreferrer"
-              class="footer-social-link" aria-label="Instagram">
-              Instagram
+              class="footer-social-link" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                <rect x="4" y="4" width="16" height="16" rx="5"></rect>
+
+                <circle cx="12" cy="12" r="3.5"></circle>
+
+                <circle cx="17.2" cy="6.8" r="1"></circle>
+
+              </svg>
             </a>
 
+            <!-- WhatsApp -->
 
             <a href="https://wa.me/244927607160" target="_blank" rel="noopener noreferrer" class="footer-social-link"
-              aria-label="WhatsApp">
-              WhatsApp
+              aria-label="WhatsApp" title="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"></path>
+
+                <path
+                  d="M9.2 8.5c.2-.4.4-.4.7-.4h.4c.2 0 .3.1.4.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c.7 1.1 1.5 1.8 2.7 2.4l.7-.7c.2-.2.4-.2.6-.1l1.7.8c.3.1.4.3.3.6-.2.7-.8 1.4-1.5 1.5-1 .1-2.7-.5-4.3-1.7-1.5-1.1-2.8-2.8-3.1-4-.2-.8-.1-1.4.3-1.9Z">
+                </path>
+
+              </svg>
             </a>
 
           </div>
 
         </div>
-
 
         <!-- NAVEGAÇÃO -->
 
@@ -1985,43 +1766,62 @@
             Navegação
           </h3>
 
-
           <ul class="footer-links">
 
             <li>
               <a href="#inicio">
-                Início
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 10.5 12 3l9 7.5"></path>
+                  <path d="M5 9.5V21h14V9.5"></path>
+                  <path d="M9 21v-7h6v7"></path>
+                </svg>
+                <span>Início</span>
               </a>
             </li>
 
             <li>
               <a href="#sobre">
-                Sobre mim
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="8" r="4"></circle>
+                  <path d="M4 21c0-4 3.2-7 8-7s8 3 8 7"></path>
+                </svg>
+                <span>Sobre mim</span>
               </a>
             </li>
 
             <li>
               <a href="#competencias">
-                Competências
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3 4 7v6c0 4.5 3.2 7 8 8 4.8-1 8-3.5 8-8V7l-8-4Z"></path>
+                  <path d="m8.5 12 2.2 2.2 4.8-5"></path>
+                </svg>
+                <span>Competências</span>
               </a>
             </li>
 
             <li>
               <a href="#aplicacoes">
-                Aplicações
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="6" y="3" width="12" height="18" rx="2"></rect>
+                  <path d="M10 6h4M10 18h4"></path>
+                </svg>
+                <span>Aplicações</span>
               </a>
             </li>
 
             <li>
               <a href="#projetos">
-                Projetos
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 7h7l2 2h9v10H3z"></path>
+                  <path d="M3 7V5h7l2 2"></path>
+                </svg>
+                <span>Projetos</span>
               </a>
             </li>
 
           </ul>
 
         </div>
-
 
         <!-- EXPLORAR -->
 
@@ -2031,37 +1831,63 @@
             Explorar
           </h3>
 
-
           <ul class="footer-links">
 
             <li>
               <a href="#formacao">
-                Formação
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m3 9 9-5 9 5-9 5-9-5Z"></path>
+                  <path d="M7 11v5c2.5 2 7.5 2 10 0v-5"></path>
+                </svg>
+                <span>Formação</span>
               </a>
             </li>
 
             <li>
               <a href="#tecnologias">
-                Tecnologias
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="14" rx="2"></rect>
+                  <path d="M8 21h8M12 18v3"></path>
+                  <path d="m8 10 2 2-2 2M12 14h4"></path>
+                </svg>
+                <span>Tecnologias</span>
               </a>
             </li>
 
             <li>
               <a href="https://github.com/AlexoJose26/" target="_blank" rel="noopener noreferrer">
-                GitHub
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 19c-4 .9-4-2-5-2"></path>
+                  <path
+                    d="M14 21v-3.9c0-1 .1-1.4-.5-2.1 1.7-.2 3.5-.8 3.5-4.1 0-.8-.3-1.5-.8-2 .1-.2.3-1-.1-2-.6-.2-2 .8-2 .8a6.9 6.9 0 0 0-3.6 0s-1.4-1-2-.8c-.4 1-.2 1.8-.1 2-.5.5-.8 1.2-.8 2 0 3.3 1.8 3.9 3.5 4.1-.6.6-.6 1.1-.6 2.1V21">
+                  </path>
+                  <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path>
+                </svg>
+                <span>GitHub</span>
               </a>
             </li>
 
             <li>
               <a href="https://www.linkedin.com/in/alexo-jos%C3%A9-779a0134b/" target="_blank"
                 rel="noopener noreferrer">
-                LinkedIn
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+                  <path d="M8 10v6"></path>
+                  <path d="M8 7.5v.1"></path>
+                  <path d="M12 16v-3.2a2.8 2.8 0 0 1 5.6 0V16"></path>
+                  <path d="M12 10v6"></path>
+                </svg>
+                <span>LinkedIn</span>
               </a>
             </li>
 
             <li>
               <a href="#contacto">
-                Contacto
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 5h16v12H8l-4 4V5Z"></path>
+                  <path d="M8 9h8M8 13h5"></path>
+                </svg>
+                <span>Contacto</span>
               </a>
             </li>
 
@@ -2069,36 +1895,56 @@
 
         </div>
 
+        <!-- CONTACTO -->
+
         <div class="footer-column">
 
           <h3 class="footer-heading">
             Contacto
           </h3>
 
-
           <ul class="footer-links">
 
             <li>
               <a href="mailto:alexosalvadorjose2612@gmail.com">
-                Email
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                  <path d="m4 7 8 6 8-6"></path>
+                </svg>
+                <span>Email</span>
               </a>
             </li>
 
             <li>
               <a href="tel:+244927607160">
-                +244 927 607 160
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 3h4l2 5-2.5 1.8a15 15 0 0 0 4.7 4.7L16 12l5 2v4c0 1.1-.9 2-2 2C10.7 20 4 13.3 4 5c0-1.1.9-2 2-2Z">
+                  </path>
+                </svg>
+                <span>+244 927 607 160</span>
               </a>
             </li>
 
             <li>
               <a href="https://wa.me/244927607160" target="_blank" rel="noopener noreferrer">
-                WhatsApp
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"></path>
+                  <path
+                    d="M9.2 8.5c.2-.4.4-.4.7-.4h.4c.2 0 .3.1.4.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c.7 1.1 1.5 1.8 2.7 2.4l.7-.7c.2-.2.4-.2.6-.1l1.7.8c.3.1.4.3.3.6-.2.7-.8 1.4-1.5 1.5-1 .1-2.7-.5-4.3-1.7-1.5-1.1-2.8-2.8-3.1-4-.2-.8-.1-1.4.3-1.9Z">
+                  </path>
+                </svg>
+                <span>WhatsApp</span>
               </a>
             </li>
 
             <li>
               <span class="footer-location">
-                Moxico, Angola
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"></path>
+                  <circle cx="12" cy="9" r="2.5"></circle>
+                </svg>
+                <span>Moxico, Angola</span>
               </span>
             </li>
 
@@ -2108,9 +1954,7 @@
 
       </div>
 
-
       <div class="footer-divider"></div>
-
 
       <div class="footer-bottom-new">
 
@@ -2131,6 +1975,7 @@
     </div>
 
   </footer>
+
   <script src="js/script.js" defer></script>
 
 </body>
